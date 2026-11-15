@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="产品介绍与文件下载中心。浏览产品信息，获取相关资料。">
+  <title>产品与资源 · 产品展示与下载中心</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="products.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="产品与资源首页"><span class="brand-mark">P</span><span>产品与资源</span></a>
+    <nav aria-label="主导航"><a href="#products">产品</a><a href="#about">关于本站</a></nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> 产品信息与文件，一站整理</p>
+        <h1>发现产品，<br><span>获取所需资源。</span></h1>
+        <p class="hero-description">这里可以展示产品介绍、功能亮点和相关下载。当前内容为示例，替换成自己的产品资料即可开始使用。</p>
+        <a class="button button-dark" href="#products">浏览产品 <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card"><span class="art-label">PRODUCT<br>LIBRARY</span><div class="art-gem"></div><span class="art-index">01 / 03</span></div>
+        <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✳</span>
+      </div>
+      <div class="hero-foot"><span>精选产品与资料</span><span>向下探索 ↓</span></div>
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading"><div><p class="eyebrow">PRODUCTS & RESOURCES</p><h2>产品展示</h2></div><p>查看产品详情与可用资源</p></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="about-section" id="about"><div class="section-wrap about-inner"><div><p class="eyebrow">ABOUT THIS SITE</p><h2>让产品资料<br>更容易找到。</h2></div><p>这是一个用于展示产品和分享文件的基础网站。你可以添加产品介绍、使用场景、版本信息和下载资源。产品内容目前为示例占位，请按需替换。</p></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">P</span><span>产品与资源</span></a><span>产品展示与下载中心</span><a href="#home">返回顶部 ↑</a></footer>
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="关闭详情">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
